@@ -3,3 +3,4 @@ thunderbird_01_Inverted_Search.code-workspace
 a.out
 .vscode/
 *.txt
+*.o
