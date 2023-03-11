@@ -6,7 +6,6 @@ A data structure which stores mapping from words to documents or set of document
 Ex:
 -------------------------
 Words     | Documents
--------------------------
 hello     | file1      
 sky       | file1, file3
 coffee    | file2
