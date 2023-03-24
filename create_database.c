@@ -53,4 +53,5 @@ Status get_words_from_files()
         fclose(fptr);
         temp = temp->next;
     }
+    return e_success;
 }
