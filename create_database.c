@@ -39,7 +39,7 @@ Status get_words_from_files()
         while (feof(fptr) == e_success)
         {
             char buffer[20] = {0};
-            int ret = fscanf(fptr, "%20s", buffer);
+            int ret = fscanf(fptr, "%19s", buffer);
 
             // printf("ret is %d, buffer is %s\n", ret, buffer);
 
