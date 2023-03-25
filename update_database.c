@@ -67,7 +67,7 @@ Status update_database(char *filename)
         }
         
         //remove '#' and '\n'
-        char buf[2];
+        char buf[3];
         fscanf(fptr, "%2[^\n]\n", buf);    
     }
     return e_success;
