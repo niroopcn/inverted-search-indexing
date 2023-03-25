@@ -41,7 +41,7 @@ Status update_database(char *filename)
         index = index % 27; //safety cond. if non backup files are passed like main.c
 
         char word_buffer[20];
-        if((error_check = fscanf(fptr, "%20[^;];", word_buffer)) == EOF || error_check == 0) 
+        if((error_check = fscanf(fptr, "%19[^;];", word_buffer)) == EOF || error_check == 0) 
         return e_failure;
 
         int file_count;
@@ -51,7 +51,7 @@ Status update_database(char *filename)
         for (int i = 0; i < file_count; i++)
         {
             char file_buffer[20];
-            if((error_check = fscanf(fptr, "%20[^;];", file_buffer)) == EOF || error_check == 0) 
+            if((error_check = fscanf(fptr, "%19[^;];", file_buffer)) == EOF || error_check == 0) 
             return e_failure;
 
             int word_count;
